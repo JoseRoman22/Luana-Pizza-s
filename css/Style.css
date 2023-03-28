@@ -53,7 +53,10 @@ footer .bi{
     height: 250px;
     padding: 30px;
 }
-
+/* Carousel */
+.local-item {
+    text-align: center;
+}
 
 /* Contacto */
 .body-contacto {
