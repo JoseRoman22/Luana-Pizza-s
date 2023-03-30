@@ -54,10 +54,10 @@ footer .bi{
     padding: 30px;
 }
 /* Carousel */
-.local-item {
-    text-align: center;
+.maps {
+    display: flex;
+    justify-items: center;
 }
-
 /* Contacto */
 .body-contacto {
     background: url(../Img/pizzas.jpg);
@@ -130,6 +130,15 @@ footer .bi{
 
 background-color: aliceblue;
 
+}
+
+.description {
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+.description:hover {
+    height: 80px;
 }
 
 .redes {
