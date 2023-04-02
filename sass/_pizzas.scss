@@ -1,0 +1,8 @@
+.galeria-container {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    grid-template-rows: repeat(2, 1fr)
+}

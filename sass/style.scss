@@ -1,0 +1,123 @@
+
+@import "index";
+@import "pizzas";
+@import "biografia";
+@import "local";
+@import "contacto";
+
+
+
+/* estilos generales */
+
+@import url('https://fonts.googleapis.com/css2? family=Prompt:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: black;
+    color: bisque;
+    font-family: 'Prompt', sans-serif;
+}
+header {
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+    .nav-item {
+        display: flex;
+        align-items: center; }
+    .nav-link {
+        color: rgb(0, 255, 200);
+        font-size: 1.3rem; }
+}
+footer {
+    padding: 50px;
+    border-top: gray;
+    ul {
+        display: flex;
+        justify-content: space-between;        
+    }
+    li {
+        list-style: none;
+    }
+    .bi {
+        color: #ff851b;
+        font-size: 2.3rem;
+    }
+}      
+
+
+.main-galery .flex-item img{
+
+background-color: aliceblue;
+
+}
+
+.description {
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+.description:hover {
+    height: 80px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly
+    
+}
+
+/* Media queries */
+
+/* Tablet */
+@media only screen and (max-width: 768px){}
+
+/* mobile */
+@media only screen and (max-width: 576px) {
+ /* STILOS GENERALES */   
+ header{
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 20%;
+}
+.principal {
+    width: 100%;
+}
+nav {
+    padding: 100px;
+    justify-content: space-around
+}
+.video-container {
+    flex-direction: column;
+}
+
+/* Pizzas */
+.galeria-container {
+    grid-template-columns: 1fr;
+}
+/* Biografia */
+.bio-info{
+   text-align: center;
+}
+/* Local */
+.imagen {
+    align-items: center;
+}
+}
+
+
+
+
+
