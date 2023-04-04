@@ -1,7 +1,12 @@
+.bio-info {
+    text-align: center;
+}
 .item-img {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+ 
 }
 
 .imagen img {

@@ -91,6 +91,7 @@ nav {
     padding: 100px;
     justify-content: space-around
 }
+/* Index */
 .video-container {
     width: auto;
     height: auto;
@@ -105,6 +106,10 @@ nav {
 /* Biografia */
 .bio-info{
    text-align: center;
+}
+.item-img {
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Local */
