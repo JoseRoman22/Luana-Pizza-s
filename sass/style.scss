@@ -61,14 +61,6 @@ background-color: aliceblue;
 
 }
 
-.description {
-    height: 25px;
-    overflow: hidden;
-    transition: height .3s ease-in .3s;
-}
-.description:hover {
-    height: 80px;
-}
 
 .redes {
     display: flex;
@@ -100,7 +92,10 @@ nav {
     justify-content: space-around
 }
 .video-container {
+    width: auto;
+    height: auto;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Pizzas */
@@ -110,6 +105,9 @@ nav {
 /* Biografia */
 .bio-info{
    text-align: center;
+}
+.item-img {
+    align-items: center;
 }
 /* Local */
 .imagen {

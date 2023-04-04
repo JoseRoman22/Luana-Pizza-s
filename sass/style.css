@@ -6,6 +6,7 @@
 .video-container {
   display: flex;
   justify-content: space-between;
+  padding: 50px;
 }
 
 iframe {
@@ -22,11 +23,32 @@ iframe {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.item-img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Locales */
 .imagen {
   width: 350px;
   height: 250px;
   padding: 30px;
+}
+
+.mapa {
+  width: 100%;
+}
+
+h5 {
+  margin: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Contacto */
@@ -164,16 +186,6 @@ footer .bi {
   background-color: aliceblue;
 }
 
-.description {
-  height: 25px;
-  overflow: hidden;
-  transition: height 0.3s ease-in 0.3s;
-}
-
-.description:hover {
-  height: 80px;
-}
-
 .redes {
   display: flex;
   justify-content: space-evenly;
@@ -199,7 +211,10 @@ footer .bi {
     justify-content: space-around;
   }
   .video-container {
+    width: auto;
+    height: auto;
     flex-direction: column;
+    align-items: center;
   }
   /* Pizzas */
   .galeria-container {
@@ -208,6 +223,9 @@ footer .bi {
   /* Biografia */
   .bio-info {
     text-align: center;
+  }
+  .item-img {
+    align-items: center;
   }
   /* Local */
   .imagen {
