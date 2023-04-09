@@ -22,16 +22,18 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
-.container {
+.bio-info {
   text-align: center;
 }
-.container .item-img {
+.bio-info .item-img {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  align-content: space-between;
+  justify-content: center;
 }
-.container .item-img .imagen img {
+
+.imagen img {
   width: 100%;
   height: 100%;
 }
@@ -56,7 +58,7 @@ h5 {
 }
 
 .body-contacto {
-  background: url(../Img/pizzas.jpg);
+  background: url(../img/pizzas.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
