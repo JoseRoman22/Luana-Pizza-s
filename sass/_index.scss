@@ -1,12 +1,25 @@
-.principal img {
-    width: 100%;
-}
-.video-container {
+@mixin imagen-ancho {
+    img {
+      width: 100%;
+    }
+  }
+  
+  @mixin video-container {
     display: flex;
     justify-content: space-between;
-    padding: 50px;   
-}
-iframe {
-    width: 640px;
-    height: 400px;
-}
+    padding: 50px;
+    
+    iframe {
+      width: 640px;
+      height: 400px;
+    }
+  }
+
+  .principal {
+    @include imagen-ancho;
+  }
+  
+  .video-container {
+    @include video-container;
+  }
+  

@@ -1,15 +1,21 @@
-.bio-info {
+@mixin bio-info {
     text-align: center;
-}
-.item-img {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-between;
- 
-}
+    
+    .item-img {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      
+      .imagen img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 
-.imagen img {
-    width: 100%;
-    height: 100%;
-}
+  
+  .container {
+    @include bio-info;
+  }
+  

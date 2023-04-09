@@ -8,8 +8,7 @@
   justify-content: space-between;
   padding: 50px;
 }
-
-iframe {
+.video-container iframe {
   width: 640px;
   height: 400px;
 }
@@ -23,30 +22,26 @@ iframe {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.bio-info {
+.container {
   text-align: center;
 }
-
-.item-img {
+.container .item-img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-
-.imagen img {
+.container .item-img .imagen img {
   width: 100%;
   height: 100%;
 }
 
-/* Locales */
 .imagen {
   width: 350px;
   height: 250px;
   padding: 30px;
 }
-
-.mapa {
+.imagen .mapa {
   width: 100%;
 }
 
@@ -60,26 +55,12 @@ h5 {
   text-align: center;
 }
 
-/* Contacto */
 .body-contacto {
   background: url(../Img/pizzas.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
-
-.contenedor .form .form-header .form-title {
-  font-weight: normal;
-  font-family: sans-serif;
-  color: #ff851b;
-  text-align: center;
-  padding: 14px;
-}
-
-.contenedor .form .form-header .form-title span {
-  color: white;
-}
-
-.contenedor .form {
+.body-contacto .contenedor .form {
   background: rgba(0, 0, 0, 0.6);
   width: 90%;
   max-width: 650px;
@@ -89,22 +70,29 @@ h5 {
   padding-bottom: 30px;
   border-radius: 7px;
 }
-
-.contenedor .form .form-label {
+.body-contacto .contenedor .form .form-header .form-title {
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #ff851b;
+  text-align: center;
+  padding: 14px;
+}
+.body-contacto .contenedor .form .form-header .form-title span {
+  color: white;
+}
+.body-contacto .contenedor .form .form-label {
   display: block;
   color: #ff851b;
   font-size: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
 }
-
-.contenedor .form .form-input, .form-textarea {
+.body-contacto .contenedor .form .form-input, .body-contacto .contenedor .form .form-textarea {
   background: rgba(0, 0, 0, 0.7);
   border: none;
   outline: none;
   border-bottom: 10px;
   color: #ff851b;
-  width: 100px;
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -112,15 +100,13 @@ h5 {
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-.contenedor .form .form-textarea {
+.body-contacto .contenedor .form .form-input.form-textarea, .body-contacto .contenedor .form .form-textarea.form-textarea {
   resize: vertical;
   max-height: 150px;
   min-height: 50px;
 }
-
-.contenedor .form .btn-submit {
-  width: 100px;
+.body-contacto .contenedor .form .btn-submit {
+  width: 200px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: none;
   background: #ff851b;
@@ -141,7 +127,6 @@ h5 {
   overflow: hidden;
   transition: height 0.3s ease-in 0.3s;
 }
-
 .description:hover {
   height: 80px;
 }
@@ -171,7 +156,7 @@ header .nav-item {
   align-items: center;
 }
 header .nav-link {
-  color: rgb(0, 255, 200);
+  color: #ffc107;
   font-size: 1.3rem;
 }
 

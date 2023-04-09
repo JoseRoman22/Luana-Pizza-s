@@ -1,19 +1,32 @@
-/* Locales */
-.imagen {
+@mixin imagen {
     width: 350px;
     height: 250px;
     padding: 30px;
-}
-.mapa {
-    width: 100%;
-}
-h5 {
+    
+    .mapa {
+      width: 100%;
+    }
+  }
+  
+  @mixin h5-estilo {
     margin: 50px;
     text-align: center;
-    font-family:'Times New Roman', Times, serif
-    
-}
-
-.local-item {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  @mixin local-item {
     text-align: center;
-}
+  }
+
+  .imagen {
+    @include imagen;
+  }
+  
+  h5 {
+    @include h5-estilo;
+  }
+  
+  .local-item {
+    @include local-item;
+  }
+  
